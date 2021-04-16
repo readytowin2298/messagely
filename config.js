@@ -5,8 +5,8 @@
 require("dotenv").config();
 
 const DB_URI = (process.env.NODE_ENV === "test")
-  ? "postgresql:///messagely_test"
-  : "postgresql:///messagely";
+  ? "postgres://wuckybrm:cWgznqjdqqmCP5-K-RBOW2GwHWbCwvsB@queenie.db.elephantsql.com:5432/wuckybrm"
+  : "postgres://awfocelw:8ZRJoEybsKG5RNkLejnlPCQF9G2a2EPq@queenie.db.elephantsql.com:5432/awfocelw";
 
 const SECRET_KEY = process.env.SECRET_KEY || "secret";
 
